@@ -1,0 +1,36 @@
+.follow {
+  margin: 5rem 0;
+  padding: 5rem 0;
+  &__container {
+    &__grid {
+      &__item {
+        margin-bottom: 3rem;
+        .follow__header {
+          font-size: 4rem;
+          font-weight: 800;
+          text-align: center;
+        }
+
+        .follow__list {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          &__item {
+            &__link {
+              img {
+                min-width: 2rem;
+                max-width: 5rem;
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

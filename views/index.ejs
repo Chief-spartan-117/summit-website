@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website of mine" />
+    <title>Summit Shrestha | Personal website of mine</title>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/summitdeflash/images/main/logo21.png"
+      type="image/x-form"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" class="style" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav">
+        <div class="nav__container">
+          <div class="nav__container__grid">
+            <div class="nav__container__grid__item">
+              <div class="nav__container__grid__item__logo">
+                <a href="/">
+                  <img src="/image/logo_full.png" alt="Logo" class="logo" />
+                </a>
+              </div>
+            </div>
+            <div class="nav__container__grid__item">
+              <div class="navbar__menu">
+                <div class="menu__overlay"></div>
+                <div class="menu">
+                  <div class="menu__btn"></div>
+                </div>
+              </div>
+              <div class="navbar">
+                <ul class="navbar__list">
+                  <li class="navbar__list__item">
+                    <a
+                      href="#main-section"
+                      class="navbar__list__item__link nav-active"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="navbar__list__item">
+                    <a href="#nowadays" class="navbar__list__item__link"
+                      >Now a days</a
+                    >
+                  </li>
+                  <li class="navbar__list__item">
+                    <a href="#projects" class="navbar__list__item__link"
+                      >Projects</a
+                    >
+                  </li>
+                  <li class="navbar__list__item">
+                    <a href="#gallery" class="navbar__list__item__link"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li class="navbar__list__item">
+                    <a href="#contact" class="navbar__list__item__link"
+                      >Contact Me</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="login__modal">
+      <div class="login__modal__backdrop"></div>
+      <div class="login__modal__container">
+        <div class="login__modal__container__grid">
+          <div class="login__modal__container__grid__title">
+            <p class="title">
+              Welcome Chief,<br />
+              Please Login to get aboard
+            </p>
+          </div>
+          <div class="login__modal__container__grid__item">
+            <form action="/login" class="login" method="POST">
+              <div class="input__element">
+                <input
+                  type="email"
+                  class="input email"
+                  id="email"
+                  name="email"
+                  placeholder=" "
+                  required
+                  autocomplete="off"
+                />
+                <label for="email" class="label">Email</label>
+              </div>
+              <div class="input__element">
+                <input
+                  type="password"
+                  class="input password"
+                  name="password"
+                  id="password"
+                  placeholder=" "
+                  required
+                />
+                <label for="password" class="label">Password</label>
+              </div>
+              <button type="submit" class="login__btn">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section id="main-section">
+        <div class="home">
+          <div class="home__container">
+            <div class="home__container__grid">
+              <div class="home__container__grid__item">
+                <div class="home__container__grid__item__image">
+                  <img
+                    src="/image/profile_pic.jpg"
+                    alt="my photo"
+                    class="image"
+                  />
+                </div>
+              </div>
+              <div class="home__container__grid__item">
+                <div class="home__container__grid__item__content">
+                  <p class="greeting">Hello Guys...</p>
+                  <h1 class="name">I am <br />Summit Shrestha</h1>
+                  <p class="mood">
+                    And a very moody person who can think everythink very
+                    beautifully.
+                  </p>
+                </div>
+                <div class="contact__btn">
+                  <a href="#contact" class="contact">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nowadays">
+        <div class="now">
+          <div class="now__container">
+            <div class="now__container__grid">
+              <div class="now__container__grid__item">
+                <div class="now__header">
+                  <h2 class="header">Now A Days</h2>
+                </div>
+              </div>
+              <div class="now__container__grid__item">
+                <div class="photo__container">
+                  <div class="photo__container__grid">
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img src="/image/ad.jpg" alt="Image 1" class="photo" />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img src="/image/ada.jpg" alt="Image 1" class="photo" />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper nowadays__swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="swiper__container__grid__item">
+                        <div class="swiper__container__grid__item__image">
+                          <img
+                            src="/image/front.jpg"
+                            alt="Image 1"
+                            class="photo"
+                          />
+                        </div>
+                        <div class="swiper__container__grid__item__quote">
+                          <p class="quote">You can do it</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__container__grid__item">
+                        <div class="swiper__container__grid__item__image">
+                          <img
+                            src="/image/front.jpg"
+                            alt="Image 2"
+                            class="photo"
+                          />
+                        </div>
+                        <div class="swiper__container__grid__item__quote">
+                          <p class="quote">You can do it!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__container__grid__item">
+                        <div class="swiper__container__grid__item__image">
+                          <img
+                            src="/image/front.jpg"
+                            alt="Image 3"
+                            class="photo"
+                          />
+                        </div>
+                        <div class="swiper__container__grid__item__quote">
+                          <p class="quote">You can do it!!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="porjects">
+          <div class="projects__container">
+            <div class="projects__container__grid">
+              <div class="projects__container__grid__item">
+                <div class="projects__header">
+                  <h2 class="header">Projects</h2>
+                </div>
+              </div>
+              <div class="projects__container__grid__item">
+                <div class="photo__container">
+                  <div class="photo__container__grid">
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                    <div class="photo__container__grid__item">
+                      <div class="photo__container__grid__item__image">
+                        <img
+                          src="/image/front.jpg"
+                          alt="Image 1"
+                          class="photo"
+                        />
+                      </div>
+                      <div class="photo__container__grid__item__quote">
+                        <p class="quote">You can do it</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper project__swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="swiper__container__grid__item">
+                        <div class="swiper__container__grid__item__image">
+                          <img
+                            src="/image/front.jpg"
+                            alt="Image 1"
+                            class="photo"
+                          />
+                        </div>
+                        <div class="swiper__container__grid__item__quote">
+                          <p class="quote">You can do it</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__container__grid__item">
+                        <div class="swiper__container__grid__item__image">
+                          <img
+                            src="/image/front.jpg"
+                            alt="Image 2"
+                            class="photo"
+                          />
+                        </div>
+                        <div class="swiper__container__grid__item__quote">
+                          <p class="quote">You can do it!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__container__grid__item">
+                        <div class="swiper__container__grid__item__image">
+                          <img
+                            src="/image/front.jpg"
+                            alt="Image 3"
+                            class="photo"
+                          />
+                        </div>
+                        <div class="swiper__container__grid__item__quote">
+                          <p class="quote">You can do it!!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="gallery__container">
+          <div class="gallery__container__grid">
+            <div class="gallery__container__grid__item">
+              <div class="gallery__container__grid__item__header">
+                <h3 class="gallery__header">Gallery</h3>
+              </div>
+            </div>
+            <div class="gallery__container__grid__item">
+              <div class="gallery__images__container">
+                <div class="gallery__images__container__marquee">
+                  <div class="gallery__images__container__marquee__group">
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">Wood carving from Umamaheswor Deyda</p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ada.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/butta.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/door.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/images.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/baghbhairav.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gallery__images__container__marquee__group">
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">Wood carving from Umamaheswor Deyda</p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__images__container__item">
+                      <div class="images">
+                        <img
+                          src="/image/ad.jpg"
+                          alt="Gallery image1"
+                          class="gallery__image"
+                        />
+                      </div>
+                      <div class="images__title">
+                        <p class="title">
+                          Wood carving from Umamaheswor Deyda:
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact__container">
+          <div class="contact__container__grid">
+            <div class="contact__container__grid__item">
+              <div class="contact__container__grid__item__header">
+                <h4 class="contact__header">Contact Me</h4>
+              </div>
+            </div>
+            <div class="contact__container__grid__item">
+              <div class="contact__container__grid__item__container">
+                <form action="/contact-me" class="contact__form" method="post">
+                  <div class="contact__form__input">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" required name="fname" />
+                  </div>
+                  <div class="contact__form__input">
+                    <label for="mname">Middle Name</label>
+                    <input type="text" id="mname" name="mname" />
+                  </div>
+                  <div class="contact__form__input">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required />
+                  </div>
+                  <div class="contact__form__input">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                      <option value="select">Select Option</option>
+                      <option value="male">Male</option>
+                      <option value="fenale">Female</option>
+                      <option value="lgbtq">LGBTQ+</option>
+                    </select>
+                  </div>
+                  <div class="contact__form__input">
+                    <label for="useremail">Email</label>
+                    <input
+                      type="text"
+                      id="useremail"
+                      name="useremail"
+                      required
+                    />
+                  </div>
+                  <div class="contact__form__input">
+                    <label for="phonenumber">Phone Number</label>
+                    <input
+                      type="number"
+                      id="phonenumber"
+                      name="phonenumber"
+                      inputmode="tel"
+                      maxlength="10"
+                    />
+                  </div>
+                  <div class="contact__form__input">
+                    <label for="message">Message</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="6"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="contact__form__input__btn">
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="follow">
+        <div class="follow__container">
+          <div class="follow__container__grid">
+            <div class="follow__container__grid__item">
+              <h5 class="follow__header">Follow Me</h5>
+            </div>
+            <div class="follow__container__grid__item">
+              <ul class="follow__list">
+                <li class="follow__list__item">
+                  <a
+                    href="https://discord.com/"
+                    class="follow__list__item__link"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/48/null/discord--v2.png"
+                  /></a>
+                </li>
+                <li class="follow__list__item">
+                  <a
+                    href="https://www.facebook.com/shrestha8summit"
+                    class="follow__list__item__link"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/48/null/facebook-new.png"
+                  /></a>
+                </li>
+                <li class="follow__list__item">
+                  <a
+                    href="https://www.instagram.com/shrestha8summit/"
+                    class="follow__list__item__link"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/fluency/48/null/instagram-new.png"
+                  /></a>
+                </li>
+                <li class="follow__list__item">
+                  <a
+                    href="https://twitter.com/shrestha8summit"
+                    class="follow__list__item__link"
+                    target="_blank"
+                    ><img
+                      src="https://img.icons8.com/color/48/null/twitter-circled--v1.png"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer__container">
+        <div class="footer__container__copyright">
+          <p class="copyright">&copy; Copyright <span class="date"></span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>

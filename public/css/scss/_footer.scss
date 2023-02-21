@@ -1,0 +1,10 @@
+#footer {
+  .footer__container {
+    &__copyright {
+      .copyright {
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

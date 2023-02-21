@@ -1,0 +1,149 @@
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  #nav {
+    background-color: #eeeeee95;
+    backdrop-filter: blur(2rem);
+    padding: 1.5rem;
+    .nav__container {
+      &__grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item {
+          &__logo {
+            width: 100%;
+            .logo {
+              max-width: 18rem;
+              min-width: 5rem;
+              width: 100%;
+              @media only screen and (max-width: 26.5625em) {
+                max-width: 13rem;
+              }
+            }
+          }
+
+          .navbar__menu {
+            .menu__overlay {
+              position: fixed;
+              top: 0;
+              right: 0%;
+              background-color: $white;
+              width: 0%;
+              height: 100vh;
+              transition: width 0.2s ease-in-out;
+            }
+            .menu {
+              padding: 1.5rem 1rem;
+              cursor: pointer;
+              @media only screen and (min-width: 48em) {
+                display: none;
+              }
+              .menu__btn {
+                width: 3.5rem;
+                height: 0.3rem;
+                background-color: $red;
+                border-radius: 2rem;
+                position: relative;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -100%;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  transform: translateX(0) translateY(-180%);
+                  background-color: $red;
+                  border-radius: 2rem;
+                }
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  transform: translateX(0) translateY(180%);
+                  background-color: $red;
+                  border-radius: 2rem;
+                }
+              }
+              .active {
+                background-color: transparent;
+                &::before {
+                  transform: rotate(45deg);
+                  transform-origin: 38% 0;
+                }
+                &::after {
+                  transform: rotate(-45deg);
+                  transform-origin: 38% 100%;
+                }
+              }
+            }
+          }
+          .navbar {
+            @media only screen and (max-width: 48em) {
+              visibility: hidden;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, 50%);
+              transition: opacity 0.3s ease-in-out;
+            }
+            &__list {
+              list-style: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              @media only screen and (max-width: 48em) {
+                flex-direction: column;
+                row-gap: 3rem;
+              }
+              &__item {
+                margin: 0 0.5rem;
+
+                &:has(.active) > .navbar__list__item__link::after {
+                  background: none;
+                }
+                &__link {
+                  text-decoration: none;
+                  font-size: 1.4rem;
+                  padding: 1rem 1.5rem;
+                  color: $black;
+                  position: relative;
+                  font-weight: normal;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0%;
+                    height: 0.15rem;
+                    background: $red;
+                    transform: translate(-50%, -50%);
+                    transition: width 0.2s ease-in-out;
+                  }
+                  &:hover::after {
+                    width: 60%;
+                  }
+                }
+
+                .nav-active {
+                  background: linear-gradient(45deg, $red, $pink);
+                  color: $white;
+                  border-radius: 0.5rem;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
